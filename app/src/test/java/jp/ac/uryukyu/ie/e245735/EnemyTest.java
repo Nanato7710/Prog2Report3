@@ -17,7 +17,7 @@ class EnemyTest {
         int defaultHeroHp = 100;
         Hero demoHero = new Hero("デモ勇者", defaultHeroHp, 100);
         Enemy slime = new Enemy("スライムもどき", 10, 100);
-        while (!slime.getDead()) {
+        while (!slime.isDead()) {
             demoHero.attack(slime);
         }
         slime.attack(demoHero);
