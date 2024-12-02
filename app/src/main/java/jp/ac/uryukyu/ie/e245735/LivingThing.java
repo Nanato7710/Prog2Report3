@@ -62,6 +62,14 @@ public class LivingThing {
     }
 
     /**
+     * 攻撃力を取得するgetterメソッド。
+     * @return this.attack 攻撃力
+     */
+    public int getAttack() {
+        return attack;
+    }
+
+    /**
      * 攻撃するメソッド。
      * attackに応じて乱数でダメージを算出し、hero.wounded()によりダメージ処理を実行。
      * @param hero 攻撃対象
